@@ -1,14 +1,7 @@
 '''
-Author:Ashley Muka
-Assignment Title: Product Class
-Assignment Description: Implement a product class that will manage inventory
-Due date: 08/25/2023
-Date Created:08/24/2023
-Date Last Modified:08/25/2023
+Description: Implement a product class that will manage product inventory
 
 '''
-
-#data abstraction
 
 class Product:
 
@@ -44,18 +37,14 @@ class Product:
 
 if __name__ == "__main__":
 
-
     code = input()
     price = float(input())
     count = int(input())
-
-
 
     product = Product(code,price,count)
 
     product.add_inventory(count)
     product.sell_inventory(count)
-
 
     print(f'Name: {code}')
     print(f'Price: {price}')
